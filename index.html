@@ -8,7 +8,9 @@
 :root{--bg:#f6fafc;--fg:#1c2733;--muted:#5b6b7a;--card:#ffffff;--line:#dde6ee;--accent:#1677c7}
 @media (prefers-color-scheme:dark){:root{--bg:#0f161d;--fg:#e4ebf1;--muted:#9aabba;--card:#16202a;--line:#263442;--accent:#6cb6f5}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Noto Sans JP","Hiragino Sans",sans-serif;word-break:keep-all}
+.langs{display:flex;gap:12px;font-size:14px;margin-bottom:12px}
+.langs a{text-decoration:none}.langs .cur{color:var(--muted);font-weight:600}
 main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
 header{margin-bottom:24px}
 header .app{color:var(--muted);font-size:14px;letter-spacing:.04em;text-transform:uppercase}
@@ -27,9 +29,10 @@ nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;margin-top:40px;padding-
 <body>
 <main>
 <header>
+<div class="langs"><span class="cur">English</span><a href="index-ko.html" hreflang="ko">한국어</a><a href="index-ja.html" hreflang="ja">日本語</a></div>
 <div class="app">Bubble Lagoon &middot; ON.J</div>
 <h1>Bubble Lagoon</h1>
-<p class="updated">Last updated: November 4, 2026</p>
+<p class="updated">Last updated: November 15, 2026</p>
 </header>
 <p>Legal information and support for the mobile game <strong>Bubble Lagoon</strong> by ON.J.</p>
 <a class="card" href="privacy.html"><strong>Privacy Policy</strong><br>How we collect, use, and protect your data.</a>

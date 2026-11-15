@@ -8,7 +8,9 @@
 :root{--bg:#f6fafc;--fg:#1c2733;--muted:#5b6b7a;--card:#ffffff;--line:#dde6ee;--accent:#1677c7}
 @media (prefers-color-scheme:dark){:root{--bg:#0f161d;--fg:#e4ebf1;--muted:#9aabba;--card:#16202a;--line:#263442;--accent:#6cb6f5}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Noto Sans JP","Hiragino Sans",sans-serif;word-break:keep-all}
+.langs{display:flex;gap:12px;font-size:14px;margin-bottom:12px}
+.langs a{text-decoration:none}.langs .cur{color:var(--muted);font-weight:600}
 main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
 header{margin-bottom:24px}
 header .app{color:var(--muted);font-size:14px;letter-spacing:.04em;text-transform:uppercase}
@@ -27,9 +29,10 @@ nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;margin-top:40px;padding-
 <body>
 <main>
 <header>
+<div class="langs"><span class="cur">English</span><a href="privacy-ko.html" hreflang="ko">한국어</a><a href="privacy-ja.html" hreflang="ja">日本語</a></div>
 <div class="app">Bubble Lagoon &middot; ON.J</div>
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: November 13, 2026</p>
+<p class="updated">Last updated: November 15, 2026</p>
 </header>
 <h2>1. Who We Are</h2>
 <p>ON.J ("Company," "we," "us") is the data controller responsible for the personal data described in this Privacy Policy, collected through the mobile game "Bubble Lagoon" (the "Service"). Contact details for privacy matters are in Section 14.</p>
@@ -65,7 +68,7 @@ nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;margin-top:40px;padding-
 </ul>
 <p>Google's privacy policy: <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a><br>
 Firebase privacy information: <a href="https://firebase.google.com/support/privacy" rel="noopener">https://firebase.google.com/support/privacy</a><br>
-How Google uses data from apps that use its services: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">https://policies.google.com/technologies/partner-sites</a><br>
+How Google uses data from apps: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">https://policies.google.com/technologies/partner-sites</a><br>
 Unity's privacy policy: <a href="https://unity.com/legal/privacy-policy" rel="noopener">https://unity.com/legal/privacy-policy</a></p>
 <h2>4. Legal Basis for Processing (GDPR)</h2>
 <p>Where the General Data Protection Regulation (GDPR) applies (e.g., you are located in the EEA or UK), we rely on the following legal bases:</p>
